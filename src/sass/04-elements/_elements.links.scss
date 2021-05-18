@@ -1,0 +1,17 @@
+a {
+  @include on-event {
+    color: $color-dark;
+  }
+
+  color: $color-primary;
+  text-decoration: none;
+
+  &:link,
+  &:visited {
+    color: #27a;
+  }
+  &:hover {
+    background-color: #37a;
+    color: #fff;
+  }
+}

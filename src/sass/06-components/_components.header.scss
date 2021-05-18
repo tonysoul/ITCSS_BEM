@@ -1,0 +1,74 @@
+.c-header {
+  background-color: #f0f3f5;
+  &__inner {
+    @include clearfix();
+    height: 74px;
+    padding: 10px 0 5px;
+  }
+  &__line {
+    border-bottom: 1px solid #e3ebec;
+  }
+  &__logo {
+    float: left;
+    margin-right: 13px;
+    width: 145px;
+    height: 56px;
+    background: url(../img/lg_movie_a12_2.png) 0 12px no-repeat;
+  }
+  &__search-form {
+    margin-top: 10px;
+  }
+  &__top {
+    position: absolute;
+    right: 134px;
+    top: 10px;
+    width: 186px;
+    height: 96px;
+    background: url(../img/annual_2018.png) center/contain no-repeat;
+  }
+}
+
+.c-search-form {
+  display: flex;
+  width: 507px;
+  height: 34px;
+  background: url(../img/nav_mv_bg.png) no-repeat;
+  &__input {
+    flex: 1;
+    height: 30px;
+    padding: 0 20px;
+    font-size: 13px;
+    border: none;
+    outline: none;
+  }
+  &__button {
+    width: 37px;
+    height: 34px;
+    padding: 0;
+    margin: 0;
+    border: none;
+    cursor: pointer;
+    background: url(../img/nav_mv_bg.png) no-repeat 0 -40px;
+  }
+}
+
+.c-nav {
+  height: 40px;
+  line-height: 40px;
+  font-size: 14px;
+  &__item {
+    display: inline-block;
+    margin-right: 25px;
+
+    a {
+      &:link,
+      &:visited {
+        color: #27a;
+      }
+      &:hover {
+        background-color: #37a;
+        color: #fff;
+      }
+    }
+  }
+}
